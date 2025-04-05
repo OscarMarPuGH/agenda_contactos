@@ -1,0 +1,28 @@
+struct node {
+    phone _p;
+    node* f_esq;
+    node* f_dret;
+    nat _altura;
+    node (const phone &p , node* esq = nullptr, node* dret = nullptr);
+};
+node* _arrel;
+nat _size;
+
+//AVL
+
+static int altura(node *n);
+static int factor_equilibri (node *n);
+static node* rotacio_dreta(node* y);
+static node* rotacio_esquerra(node* x);
+static node* insereix_avl(node* n, const phone &p);
+static node* elimina(node* n, nat num);
+
+//complementos de los metodos publicos
+
+static node* copia(node *m);
+static void esborra(node *m);
+static node* cerca(node* n, nat num);
+static void dump(node *n, vector<phone>& V);
+static void mergeSort(vector<phone>& V);
+static node* succ(node *n);
+

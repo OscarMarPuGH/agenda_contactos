@@ -1,0 +1,31 @@
+struct node {
+    char _c;    //Símbol posició i-èssima de la clau
+    phone _p;   //Telefon
+    node* _pf;  //Primer fill, apunta a símbols de la següent posició
+    node* _sg;  //Següent germà, apunta a símbols de la mateixa posició
+    node(const char &c, phone _p, node* pf = nullptr, node* sg = nullptr); //Constructor de node
+};
+
+node* _root;    //Arrel de l'arbre
+node* _act; //Conte el node actual
+
+node* _ant[1000];   //array d'anteriors
+nat _itant;     //Iterador de l'array d'anteriors
+string _pref;   //Prefix en curs
+bool _ind;  //Indica si el prefix es indefinit
+nat _freq;  //Emmagatzema la frequencia total
+double _lm; //Guarda la longitud mitjana
+bool _ds;   //Indica si hi ha hagut un seguent previ
+
+
+static node* insereix(node *t, nat i, const string &k, const phone &p);
+static void esborra_nodes(node* t);
+static node* copia(node* m, const phone &p);
+
+static node* actualitzaSeguent(node *n, string pref, int i);
+static node* cerca(const string &s, node *n, nat i);
+static void extreu(node *n, const string &par, vector<string> &res);
+static nat pulsacions(string s, node *n, nat i, nat puls, bool sg);
+
+static void mergeSort(vector<phone>& V);
+static void mergeSortLexic(vector<string>& V);

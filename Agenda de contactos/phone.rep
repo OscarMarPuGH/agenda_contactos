@@ -1,0 +1,5 @@
+nat numtlf;		//numero de telefon
+string name;		//nom del propietari del num de telefon
+nat compt;		//trucades totals al num de telefon
+
+
