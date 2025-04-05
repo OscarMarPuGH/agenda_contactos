@@ -5,7 +5,7 @@ Se trata de una aplicación de consola para gestionar una agenda de contactos ut
 
 ---
 
-## 🧠 ¿Qué hace?
+## ¿Qué hace?
 
 Esta aplicación permite:
 
@@ -16,7 +16,7 @@ Esta aplicación permite:
 
 ---
 
-## 🛠️ Tecnologías y conceptos aplicados
+## Tecnologías y conceptos aplicados
 
 - C++ (Programación estructurada y orientada a objetos)
 - Entrada y salida por consola
